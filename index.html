@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEZE Conecta | Plataforma Educativa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Merriweather', 'serif'],
+              display: ['Inter', 'sans-serif'], // Used for the brand font
+            },
+            colors: {
+              meze: {
+                50: '#f0f9ff', // Alice Blue
+                100: '#e0f2fe', // Light Sky
+                200: '#bae6fd',
+                300: '#7dd3fc',
+                400: '#38bdf8', // Bright Sky (Brand Primary Light)
+                500: '#0ea5e9', // Sky Blue (Brand Primary)
+                600: '#0284c7', // Brand Primary Darker
+                700: '#0369a1',
+                800: '#075985',
+                900: '#0c4a6e', // Text contrast
+                950: '#082f49',
+              }
+            },
+            backgroundImage: {
+                'meze-gradient': 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)', // Custom brand gradient
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #f8fafc;
+      }
+      /* Custom scrollbar for minimalist look */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #bae6fd;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #38bdf8;
+      }
+      
+      .font-brand {
+        font-family: 'Inter', sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.05em;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.36.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
